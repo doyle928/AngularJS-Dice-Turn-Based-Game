@@ -1,0 +1,14 @@
+<div id="enemy">
+    <progress id="enemy-health" value="1" max="1"></progress>
+</div>
+<div id="player">
+    <progress id="player-health" value="40" max="40"></progress>
+</div>
+<div ng-switch on="$ctrl.playerTurn">
+    <div ng-switch-when="true">
+        <playerturn-component></playerturn-component>
+    </div>
+    <div ng-switch-when="false">
+        <enemyturn-component></enemyturn-component>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+#enemy-health,
+#player-health {
+    width: 100px;
+    color: #0000ff;
+}
+
+#player-dice-list,
+#enemy-dice-list {
+    display: flex;
+    flex-direction: row;
+}
+
+#player-dice-list li,
+#enemy-dice-list li {
+    list-style: none;
+    margin: 0px 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+#player-dice-list li img,
+#enemy-dice-list li img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0 0 2px;
+}
+
+#experience {
+    transition: 1s;
+}
+
+#level-up {
+    display: none;
+}

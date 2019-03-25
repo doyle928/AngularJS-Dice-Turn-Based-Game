@@ -1,0 +1,39 @@
+<div class="skill-screen">
+    <div class="skill skill-1">
+        <h3>attack</h3>
+        <p>do same dmg as dice amount</p>
+        <button ng-click="$ctrl.singleAttack(); $ctrl.enemyHealthCheck()">click me</button>
+    </div>
+    <div class="skill skill-2">
+        <h3>heal</h3>
+        <p>max 3</p>
+        <button ng-click="$ctrl.heal()">click me</button>
+    </div>
+    <div class="skill skill-3">
+        <h3>attack 2</h3>
+        <p>do 5 points of dmg, requires a 3</p>
+        <button ng-click="$ctrl.attack2(); $ctrl.enemyHealthCheck()">click me</button>
+    </div>
+    <div class="skill skill-4">
+        <h3>bump</h3>
+        <p>+1 value of dice</p>
+        <button ng-click="$ctrl.bump()">click me</button>
+    </div>
+    <div class="skill skill-5">
+        <h3>split</h3>
+        <p>splits dice value into 2</p>
+        <button ng-click="$ctrl.split()">click me</button>
+    </div>
+    <div class="skill skill-6">
+        <h3>reroll</h3>
+        <p>reroll dice</p>
+        <button ng-click="$ctrl.reroll()">click me</button>
+    </div>
+</div>
+<div class="player-dice">
+    <ul id="player-dice-list">
+    </ul>
+</div>
+<div class="end-turn">
+    <button ng-click="$ctrl.endTurn()">end turn ></button>
+</div>
